@@ -19,7 +19,6 @@ class TendChange():
         self.den_back = [0, 0, 0, 0, 0, 0, 0, 0]
 
     def process_transaction(self):
-        import pdb; pdb.set_trace()
         change_back = self.given - self.charged
         index = len(self.den)-1
         while change_back > 0:
