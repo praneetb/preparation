@@ -39,7 +39,7 @@ class Tree():
     if node.right:
       self._print_inorder(node.right)
 
-  def _print_inorder(self, node):
+  def _print_preorder(self, node):
     print "==> %d" %(node.val)
     if node.left:
       self._print_inorder(node.left)
