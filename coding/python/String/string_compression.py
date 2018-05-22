@@ -3,15 +3,14 @@
 #
 
 def compress(str0):
-  l = list(str0)
-  l2 = [""] * len(l) *2
+  l2 = [""] * len(str0) *2
 
   odx = -1
   ch = ""
   for idx in range(len(str0)):
-    if ch != l[idx]:
+    if ch != str0[idx]:
       odx += 1
-      ch = l[idx]
+      ch = str0[idx]
       l2[odx] = ch
       odx += 1
       count = 1

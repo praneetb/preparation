@@ -27,6 +27,9 @@ class Graph:
       except KeyError:
         pass
 
+  def get_adjacent(self, n):
+    return self._graph[n]
+
   def is_connected(self, n1, n2):
     return n1 in self._graph and n2 in self._graph[n1]
     
