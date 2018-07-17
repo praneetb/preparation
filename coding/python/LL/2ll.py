@@ -44,8 +44,8 @@ class Solution(object):
             l2 = l2.next
 
           sum = val1+val2+carry
-          if sum == 0:
-            break
+          #if sum == 0:
+          #  break
 
           carry = sum/10
           tmp1.next = ListNode(sum%10)
@@ -55,11 +55,11 @@ class Solution(object):
 
 
 def main():
-  l1 = ListNode(2)
+  l1 = ListNode(0)
   l1.next = ListNode(4)
   #l1.next.next = ListNode(3)
 
-  l2 = ListNode(5)
+  l2 = ListNode(0)
   l2.next = ListNode(6)
   l2.next.next = ListNode(9)
 
